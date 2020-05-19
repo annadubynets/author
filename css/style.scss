@@ -1,0 +1,164 @@
+@import "../fontawesome-free-5.0.8/web-fonts-with-css/css/fontawesome-all.css";
+@import "https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;1,300&display=swap";
+@import "owl.carousel.min.css";
+@import "owl.theme.default.min.css";
+@import "bootstrap.min.css";
+@import "bootstrap-theme.css";
+$font-family-primary: 'Open Sans', sans-serif;
+$font-weight-400: 400;
+$font-weight-600: 600;
+$primary-color: #ffffff;
+$blue-color: #484c55;
+
+@mixin max-screen($number) {
+  @media screen and (max-width: $number) {
+    @content;
+  }
+}
+
+.navbar-header {
+  position: relative;
+  top: 20px;
+}
+
+.navbar-brand {
+  @include max-screen(767px) {
+    position: relative;
+    top: -7px;
+    padding-bottom: 80px;
+  }
+}
+
+.navbar {
+  margin-bottom: 0;
+}
+
+.navbar-default {
+  background-color: $primary-color;
+  border: none;
+  .navbar-nav>li {
+    &:after {
+      content: "";
+      display: block;
+      height: 3px;
+      width: 0;
+      background-color: #49cbcd;
+      transition: 0.5s;
+    }
+
+    &:hover:after {
+      width: 100%;
+    }
+    a {
+      font-family: $font-family-primary;
+      font-weight: $font-weight-400;
+      color: $blue-color;
+      font-size: 15px;
+      display: inline-block;
+      padding: 43px 22px;
+      &:hover {
+        color: #49cbcd;
+        background-color: #f8f9fb;
+      }
+    }
+  }
+}
+
+a:hover {
+  text-decoration: none;
+  color: $primary-color;
+}
+
+section {
+  background-image: url("../images/author_bg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  width: 100%;
+}
+
+.author-heading {
+  font-family: $font-family-primary;
+  font-weight: $font-weight-400;
+  color: $primary-color;
+  font-size: 63px;
+  text-align: center;
+  padding-top: 139px;
+}
+
+.author-desc {
+  font-family: $font-family-primary;
+  font-weight: $font-weight-400;
+  color: $primary-color;
+  font-size: 23px;
+  text-align: center;
+  line-height: 35px;
+  padding-top: 43px;
+  padding-bottom: 60px;
+}
+
+.learn-more-btn {
+  font-family: $font-family-primary;
+  font-weight: $font-weight-400;
+  font-size: 26px;
+  color: $primary-color;
+  text-align: center;
+  display: block;
+  text-decoration: none;
+  border: solid 2px $primary-color;
+  max-width: 233px;
+  padding: 23px 0;
+  margin: auto;
+  border-radius: 10px;
+}
+
+h2 {
+  margin: 0;
+}
+
+.owl-carousel .owl-item img {
+  width: auto;
+  display: inline-block;
+}
+
+.owl-nav .owl-prev {
+  position: absolute;
+  top: 335px;
+  left: 35px;
+}
+
+.owl-nav .owl-prev:before {
+  font-family: 'Font Awesome 5 Free';
+  font-weight: 900;
+  content: "\f053";
+  display: inline-block;
+  width: 51px;
+  height: 51px;
+  border-radius: 50%;
+  background-color: #fefefe;
+  line-height: 51px;
+  text-align: center;
+  color: #49cbcd;
+}
+
+.owl-nav .owl-next {
+  position: absolute;
+  top: 335px;
+  right: 35px;
+}
+
+.owl-nav .owl-next:after {
+  font-family: 'Font Awesome 5 Free';
+  font-weight: 900;
+  content: "\f054";
+  display: inline-block;
+  width: 51px;
+  height: 51px;
+  border-radius: 50%;
+  background-color: #fefefe;
+  line-height: 51px;
+  text-align: center;
+  color: #49cbcd;
+}
+
