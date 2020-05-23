@@ -336,6 +336,9 @@ h2 {
   padding: 27px 0px;
   text-align: center;
 }
+.card-header:hover {
+  background-color: #49cbcd;
+}
 
 .card-header-second {
   font-family: "Open Sans", sans-serif;
@@ -376,22 +379,11 @@ h2 {
   border: none;
 }
 .btn-primary:hover {
-  background-color: #80858c;
+  background-color: #55d2d4;
 }
 
 .list-group {
   margin-bottom: 0;
-}
-
-.second-card {
-  background-color: #49cbcd;
-}
-
-.buy-now-btn {
-  background-color: #49cbcd;
-}
-.buy-now-btn:hover {
-  background-color: #55d2d4;
 }
 
 footer {
